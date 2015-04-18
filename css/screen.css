@@ -15,13 +15,6 @@
 body { background: #333; font:14px/21px Helvetica, Arial, sans-serif; color: #333; margin: 0; padding: 0; }
 a { color: #ccc; text-decoration: underline; }
 a:hover { color: #fb2b2b; }
-h1, h2 { font-size: 26px; line-height: 28px; font-weight: normal; letter-spacing: -1px; color: #fff; }
-h3 { font-size: 18px; font-weight: normal; margin: 8px 0; }
-h4 { font-size: 14px; font-weight: normal; margin: 0; }
-h5 { font-size: 12px; font-weight: normal; margin: 0; }
-ul { margin-left: 20px; }
-ol { margin-left: 36px; }
-
 
 /*
 	----------------------------
@@ -72,11 +65,24 @@ ol { margin-left: 36px; }
 
 
 .bg {
-    background: #e67e22; 
+    background: #2c3e50; 
     overflow: hidden;
     position: fixed; 
     z-index: 1; 
     width: 100%; 
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.9;
+}
+
+h1 small, h2 small {
+    color: white;
+}
+
+li {
+    color: white;
+    list-style: none;
+    font: 3em Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    
+    text-transform: uppercase;
 }
