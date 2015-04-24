@@ -1,4 +1,6 @@
 <?php
+
+require ('secret.php');
 /**
  * AJAX Cross Domain (PHP) Proxy 0.8
  *    by Iacovos Constantinou (http://www.iacons.net)
@@ -24,7 +26,8 @@ define( 'CSAJAX_DEBUG', false );
  * A set of valid cross domain requests
  */
 $valid_requests = array(
-    'http://search.musicbrainz.org/ws/2/artist/'
+    'http://search.musicbrainz.org/ws/2/artist/',
+    'http://ws.audioscrobbler.com/2.0/'
 	// 'example.com'
 );
 /* * * STOP EDITING HERE UNLESS YOU KNOW WHAT YOU ARE DOING * * */

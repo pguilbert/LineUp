@@ -13,13 +13,15 @@ $('document').ready(function() {
                 crossDomain: true,
                 dataType: 'json',
                 data : {
-                    csurl: 'http://search.musicbrainz.org/ws/2/artist/',
-                    fmt: 'json',
-                    query: request.term
+                    csurl: 'http://ws.audioscrobbler.com/2.0/',
+                    method : 'artist.search',
+                    limit : 20,
+                    format: 'json',
+                    artist: request.term
                 },
                 success : function(data){
-                    console.log(data["artist-list"]);
-                    response($.map(data["artist-list"].artist, function(object){
+                    console.log(data["results"]);
+                    response($.map(data.results.artistmatches.artist, function(object){
                         return object.name;
                     }));
                 }
