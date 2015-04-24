@@ -78,7 +78,7 @@ h1 small, h2 small {
     color: white;
 }
 
-li {
+.day-detail li {
     color: white;
     list-style: none;
     font: 3em Helvetica, Arial, sans-serif;
