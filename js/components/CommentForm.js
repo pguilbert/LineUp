@@ -11,7 +11,8 @@ var CommentForm = React.createClass({
     render: function() {
         return (
             <form className="commentForm" onSubmit={this.handleSubmit}>
-                <input className="form-control" type="text" placeholder="Your favourite artist here..." ref="text" />
+                <input className="form-control" type="text"
+                    placeholder="Your favourite artist here..." ref="text" id={this.props.id}/>
             </form>
         );
     }
