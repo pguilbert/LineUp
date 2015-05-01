@@ -1,8 +1,8 @@
-var Comment = React.createClass({
+var Artist = React.createClass({
     render: function() {
         var rawMarkup = marked(this.props.children.toString(), {sanitize: true});
         return (
-            <li className="comment">
+            <li className="artist">
                 <span dangerouslySetInnerHTML={{__html: rawMarkup}} />
             </li>
         );

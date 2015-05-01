@@ -1,14 +1,14 @@
 React.render(
-    <CommentBox id="day1" url="comments.json" pollInterval={2000} />,
+    <DayBox id="day1" />,
     document.getElementById('day-one')
 );
 
 React.render(
-    <CommentBox id="day2" url="comments.json" pollInterval={2000} />,
+    <DayBox id="day2" />,
     document.getElementById('day-two')
 );
 
 React.render(
-    <CommentBox id="day3" url="comments.json" pollInterval={2000} />,
+    <DayBox id="day3" />,
     document.getElementById('day-three')
 );

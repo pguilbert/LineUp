@@ -1,19 +1,19 @@
-var CommentForm = React.createClass({
+var ArtistForm = React.createClass({
     handleSubmit: function(e) {
         e.preventDefault();
-        /* var text = React.findDOMNode(this.refs.text).value.trim();
+        var text = React.findDOMNode(this.refs.text).value.trim();
         if (!text) {
             return;
         }
-        this.addItem(text); */
+        this.addItem(text); 
     },
     addItem: function(text) {
-        this.props.onCommentSubmit( { text: text } );
+        this.props.onArtistSubmit( { text: text } );
         React.findDOMNode(this.refs.text).value = '';
     },
     render: function() {
         return (
-            <form className="commentForm" onSubmit={this.handleSubmit}>
+            <form className="artistForm" onSubmit={this.handleSubmit}>
                 <input className="form-control" type="text"
                     placeholder="Your favourite artist here..." ref="text" id={this.props.id}/>
             </form>
@@ -22,8 +22,9 @@ var CommentForm = React.createClass({
     componentDidMount: function() {
         var that = this;
         $(React.findDOMNode(this.refs.text)).autocomplete({
+            autoFocus: true,
             source : function(request, response){ 
-            $.ajax({
+                $.ajax({
                     url : 'proxy.php',
                     crossDomain: true,
                     dataType: 'json',
@@ -32,10 +33,10 @@ var CommentForm = React.createClass({
                         method : 'artist.search',
                         limit : 20,
                         format: 'json',
-                        artist: request.term
+                        artist: request.term,
+                        limit : 5
                     },
                     success : function(data){
-                        
                         response($.map(data.results.artistmatches.artist, function(object){
                             return object.name;
                         }));
@@ -46,6 +47,8 @@ var CommentForm = React.createClass({
                 event.preventDefault();
                 that.addItem(ui.item.value);
             }
+        }).focus(function(){            
+             $(this).autocomplete("search");
         });
     }
 });

@@ -1,2 +1,4 @@
 .idea/
+.settings/
 secret.php
+typings/
