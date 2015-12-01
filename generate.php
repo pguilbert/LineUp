@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -28,21 +27,17 @@
             <h1><small>ARRAS</small>MAINSQUARE<small>EPSI</small></h1>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <h3>Jour 1 <small>Vendredi 1 juillet</small></h3>
                 <div id="day-one"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                  <h3>Jour 2 <small>Samedi 2 juillet</small></h3>
                 <div id="day-two"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                  <h3>Jour 3 <small>Dimanche 3 juillet</small></h3>
                 <div id="day-three"></div>
-            </div>
-            <div class="col-md-3 text-center">
-                 <h3>Générer MA <small>LineUp</small></h3>
-                 <a href="generate.php" type="button" class="btn btn-default">Générer</a>
             </div>
         </div>
     </div>
