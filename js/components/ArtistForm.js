@@ -15,7 +15,7 @@ var ArtistForm = React.createClass({
         return (
             <form className="artistForm" onSubmit={this.handleSubmit}>
                 <input className="form-control" type="text"
-                    placeholder="Your favourite artist here..." ref="text" id={this.props.id}/>
+                    placeholder="Votre artiste préféré ici..." ref="text" id={this.props.id}/>
             </form>
         );
     },

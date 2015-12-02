@@ -12,7 +12,10 @@
 */
 
 
-body { background: rgb(254,249,222); font:14px/21px Helvetica, Arial, sans-serif; color: #333; margin: 0; padding: 0; }
+body { background: url('../img/mainsquare.jpeg') ;
+-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */ 
+    font:14px/21px Helvetica, Arial, sans-serif; color: #333; margin: 0; padding: 0; }
 a { color: #ccc; text-decoration: underline; }
 a:hover { color: #fb2b2b; }
 
@@ -65,16 +68,16 @@ a:hover { color: #fb2b2b; }
 
 
 .bg {
-    background: #2c3e50; 
+    background: rgb(254,249,222); 
     overflow: hidden;
     position: fixed; 
     z-index: 1; 
     width: 100%; 
     height: 100%;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
-h1, h3 {
+h1, h2, h3 {
     color: rgb(75, 213, 253);
 }
 
@@ -90,3 +93,29 @@ h1 small, h3 small {
     
     text-transform: uppercase;
 }
+.post-share a.btn-share-fb, .post-share a.btn-share-tw {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100px;
+    height: 100%;
+    line-height: 90px;
+    margin: 0 5px 0 0;
+}
+
+.post-share .btn-share-tw {
+    background: #3498db;
+}
+
+.post-share .btn-share-fb {
+    background: #1d4a9e;
+}
+
+.post-share > a {
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}   
