@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Créer votre programmation idéale pour le MainSquare 2016</title>
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -48,24 +51,25 @@
     <br><br>
     <div class="container-fluid">
         <div class="row text-center">
-            <h1><small>ARRAS</small>MAINSQUARE<small>EPSI</small></h1>
+            <h1 class="visible-xs"><small>ARRAS</small></h1><h1 class="visible-xs">MAINSQUARE</h1><h1 class="visible-xs"><small>EPSI</small></h1>
+            <h1 class="hidden-xs"><small>ARRAS</small>MAINSQUARE<small>EPSI</small></h1>
+            <div class="col-md-12 text-center">
+                 <h3>Générer MA <small>LineUp</small></h3>
+                 <a onclick="generate()" type="button" class="btn btn-default">Générer</a>
+            </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <h3>Jour 1 <small>Vendredi 1 juillet</small></h3>
                 <div id="day-one"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                  <h3>Jour 2 <small>Samedi 2 juillet</small></h3>
                 <div id="day-two"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                  <h3>Jour 3 <small>Dimanche 3 juillet</small></h3>
                 <div id="day-three"></div>
-            </div>
-            <div class="col-md-3 text-center">
-                 <h3>Générer MA <small>LineUp</small></h3>
-                 <a onclick="generate()" type="button" class="btn btn-default">Générer</a>
             </div>
         </div>
     </div>
@@ -81,6 +85,14 @@
   ga('send', 'pageview');
 
 </script>
+<div class="push"></div>
+<footer class="footer">
+  <div class="container">
+    <div class="row text-center">
+      <p class="text-muted">Place sticky footer content here.</p>
+    </div>
+  </div>
+</footer>
 </div>
 </body>
 </html>

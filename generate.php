@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Créer votre programmation idéale pour le MainSquare 2016</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -49,7 +52,7 @@
         <br><br>
         <div class="container-fluid">
             <div class="row text-center">
-                <h1><small>ARRAS</small>MAINSQUARE<small>EPSI</small></h1>
+                <a href="/index.html" class="title"><h1><small>Créez votre</small>LINEUP<small>pour le Main Square 2016</small></h1></a>
                 <h2>Partagez votre programmation préférée sur vos réseaux sociaux !</h2>
             </div>
             <div class="row">
@@ -97,15 +100,23 @@
     ?>
                         </ul>
                     </div>
-
                 </div>
             </div>
-        </div>
-        <div class="row text-center">
-            <div class="post-share">
-                <a target="_blank" title="Facebook" href="https://www.facebook.com/sharer.php?http://arrasmainsquare-epsi.fr?<?php echo $_SERVER['REQUEST_URI']?>&amp;t=Create Your Line up !" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');trackEvent('share', 'clic-share', 'clic-share-facebook');return false;" class="btn-share-fb">Facebook</a>
-                <a target="_blank" title="Twitter" href="https://twitter.com/share?http://arrasmainsquare-epsi.fr?<?php echo $_SERVER['REQUEST_URI']?>&amp;text=Create Your Line up !&amp;via=polecom_arras&amp;hashtags=MainSquare2016" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');trackEvent('share', 'clic-share', 'clic-share-twitter');return false;" class="btn-share-tw">Twitter</a>
+            <div class="row text-center">
+                <div class="post-share">
+                    <a target="_blank" title="Facebook" href="https://www.facebook.com/sharer.php?http://arrasmainsquare-epsi.fr?<?php echo $_SERVER['REQUEST_URI']?>&amp;t=Create Your Line up !" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');trackEvent('share', 'clic-share', 'clic-share-facebook');return false;" class="btn-share-fb">Facebook</a>
+                    <a target="_blank" title="Twitter" href="https://twitter.com/share?http://arrasmainsquare-epsi.fr?<?php echo $_SERVER['REQUEST_URI']?>&amp;text=Create Your Line up !&amp;via=polecom_arras&amp;hashtags=MainSquare2016" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');trackEvent('share', 'clic-share', 'clic-share-twitter');return false;" class="btn-share-tw">Twitter</a>
             </div>
+        </div>
+        </div>
+        <div class="push"></div>
+            <footer class="footer">
+              <div class="container">
+                <div class="row text-center">
+                  <p class="text-muted">Place sticky footer content here.</p>
+                </div>
+              </div>
+            </footer>
         </div>
     </div>
     <script src="js/jquery-ui.min.js" type="text/javascript"></script>
