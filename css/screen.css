@@ -146,17 +146,6 @@ html {
   padding-bottom: 60px;
 }
 
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-.container {
-  width: auto;
-  max-width: 680px;
-  padding: 0 15px;
+#partners {
+  margin-bottom: 0px;
 }
-.container .text-muted {
-  margin: 20px 0;
-}
-
