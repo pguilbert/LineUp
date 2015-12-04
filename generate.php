@@ -1,3 +1,8 @@
+<?php 
+    if(empty($_GET['day1']) && empty($_GET['day2']) && empty($_GET['day3'])) {
+        header('Location: index.html');
+    } 
+?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -31,7 +36,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
 	<link href="css/screen.css" rel="stylesheet" type="text/css" /> 
 	<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" /> 
-	<link href="css/screen.css" rel="stylesheet" type="text/css" />
+	<link href="css/screen_2.css" rel="stylesheet" type="text/css" />
 
     <script src="https://fb.me/react-0.13.2.js"></script>
     <script src="https://fb.me/JSXTransformer-0.13.2.js"></script>
