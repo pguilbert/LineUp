@@ -9,6 +9,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Page de génération du line up créé.">
+    <meta name="keywords" content="arras, mainsquare, mainsquare2016, avenir de l'artois, polecom, epsi">
 	<title>Créer votre programmation idéale pour le MainSquare 2016</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
