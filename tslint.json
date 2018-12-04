@@ -1,0 +1,8 @@
+{
+  "extends": "tslint-config-airbnb",
+  "rules": {
+    "import-name" : [true, { "react" : "React", "react-dom" : "ReactDOM" }],
+    "variable-name" : [true, "check-format", "ban-keywords", "allow-leading-underscore"],
+    "function-name" : [false]
+  }
+}

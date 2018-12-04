@@ -6,7 +6,7 @@ function ArtistInput(props: ArtistInputProps) {
   const handleArtistSubmit = (se: React.FormEvent<HTMLFormElement>) => {
     props.onSubmit(name);
     setName('');
-    se.preventDefault(); 
+    se.preventDefault();
   };
 
   return (
@@ -16,7 +16,7 @@ function ArtistInput(props: ArtistInputProps) {
 }
 
 interface ArtistInputProps {
-  onSubmit : (artistName: string) => void
+  onSubmit : (artistName: string) => void;
 }
 
 export default ArtistInput;

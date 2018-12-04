@@ -1,13 +1,12 @@
-import React from 'react';
-import ArtistInput from "./ArtistInput";
-import ArtistList from "./ArtistList";
-import { useState } from "react";
+import React, { useState } from 'react';
+import ArtistInput from './ArtistInput';
+import ArtistList from './ArtistList';
 
 function DayBox() {
-  const [artistNames, setArtistNames] = useState(new Array<string>());
+  const [artistNames, setArtistNames] = useState([] as string[]);
   return (
     <>
-      <ArtistInput onSubmit={(artist) => setArtistNames( [ ...artistNames, artist])}/>
+      <ArtistInput onSubmit={artist => setArtistNames([...artistNames, artist])}/>
       <ArtistList artistNames={artistNames} />
     </>
   );
