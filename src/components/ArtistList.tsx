@@ -1,4 +1,5 @@
 import React from 'react';
+import './ArtistList.module.css';
 
 function ArtistList(props : ArtistListProps) {
   return (

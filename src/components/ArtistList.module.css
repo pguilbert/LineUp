@@ -1,0 +1,9 @@
+ul {
+  color: rgb(14,14,14);
+  padding: 0;
+  list-style: none;
+  font: 3em Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}

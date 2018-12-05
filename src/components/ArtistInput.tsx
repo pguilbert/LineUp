@@ -11,7 +11,9 @@ function ArtistInput(props: ArtistInputProps) {
 
   return (
   <form action="#" onSubmit={handleArtistSubmit}>
-    <input type="text" value={name} onChange={(c => setName(c.target.value))} />
+    <input className="form-control"
+           type="text" value={name}
+           onChange={(c => setName(c.target.value))} />
   </form>);
 }
 
